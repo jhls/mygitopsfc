@@ -1,11 +1,11 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
-kind: Kustomization 
+kind: Kustomization
 
 resources:
-  - "deployment.yaml"
-  - "service.yaml"
+- deployment.yaml
+- service.yaml
 
-images: 
+images:
 - name: goserver
   newName: jeansena/gitopsfc
-  newTag: newtag
+  newTag: 537e6b59af2e8dab89a7f8f78ffd3249fbaec4d4
